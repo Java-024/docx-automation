@@ -1,0 +1,883 @@
+[
+    {
+        "metadata": {
+            "description": "Файл для соотношений",
+            "version": "0.0"
+        }
+    },
+    {
+        "data": {
+            "name": "категорияСемьи",
+            "string": "Категория семьи",
+            "flags": "rdl",
+            "category": "Категории семьи",
+            "numCat": 1,
+            "required": false,
+            "once": false,
+            "critical": true,
+            "list": [
+                " ",
+                "СОП",
+                "многодетная",
+                "неполная",
+                "одинокая",
+                "прочая"
+            ],
+            "count": "",
+            "countFlag": false
+        }
+    },
+    {
+        "data": {
+            "name": "кемВыявлена",
+            "string": "Кем выявлена категория",
+            "flags": "rdl",
+            "category": "Категории семьи",
+            "numCat": 1,
+            "required": false,
+            "once": false,
+            "critical": true,
+            "list": [
+                " ",
+                "ЦСО",
+                "СОиП",
+                "ОП",
+                "УО",
+                "КДН",
+                "ЗП"
+            ],
+            "count": "",
+            "countFlag": false
+        }
+    },
+    {
+        "data": {
+            "name": "деньИмесяцИгодПостановки",
+            "string": "Дата постановки",
+            "flags": "rd",
+            "category": "Категории семьи",
+            "numCat": 1,
+            "required": false,
+            "once": false,
+            "critical": true,
+            "list": [],
+            "count": "",
+            "countFlag": false
+        }
+    },
+    {
+        "data": {
+            "name": "фактСоцДем",
+            "string": "Соц - демографические",
+            "flags": "rdl",
+            "category": "Социальные факторы",
+            "numCat": 2,
+            "required": false,
+            "once": false,
+            "critical": true,
+            "list": [
+                " ",
+                "семья, воспитывающая ребёнка-инвалида старше 3-х лет",
+                "семья, воспитывающая ребёнка-инвалида до 3-х лет",
+                "семья, воспитывающая ребёнка с РАС",
+                "семья, воспитывающая ребёнка до 3-х лет",
+                "замещающая семья",
+                "многодетная семья",
+                "одинокая мать",
+                "разведённый родитель",
+                "вдова/вдовец",
+                "семья, где один из родителей - инвалид",
+                "семья, где оба родителя - инвалиды",
+                "молодая семья"
+            ],
+            "count": "",
+            "countFlag": false
+        }
+    },
+    {
+        "data": {
+            "name": "фактСоциальные",
+            "string": "Социальные",
+            "flags": "rdl",
+            "category": "Социальные факторы",
+            "numCat": 2,
+            "required": false,
+            "once": false,
+            "critical": true,
+            "list": [
+                " ",
+                "малоимущая семья",
+                "один из родителей - безработный",
+                "оба или единственный родитель - безработный",
+                "один из родителей - неработающий",
+                "оба или единственный родитель - неработающий",
+                "антисанитарное состояние жилого помещения",
+                "неудовлетворительные жилищные условия",
+                "стесненные жилищные условия",
+                "состоят в очереди на улучшение жилищных условий",
+                "отсутствие жилья",
+                "студенческая семья",
+                "беженцы/переселенцы"
+            ],
+            "count": "",
+            "countFlag": false
+        }
+    },
+    {
+        "data": {
+            "name": "фактСоцПед",
+            "string": "Соц - педагогические",
+            "flags": "rdl",
+            "category": "Социальные факторы",
+            "numCat": 2,
+            "required": false,
+            "once": false,
+            "critical": true,
+            "list": [
+                " ",
+                "неисполнение родительских обязанностей по содержанию н/л",
+                "неисполнение родительских обязанностей по воспитанию н/л",
+                "отсутствие со стороны родителей заботы о здоровье н/л",
+                "н/л самовольно уходят из дома",
+                "н/л не посещают школу",
+                "н/л пропускают занятия",
+                "антиобщественные действия н/л",
+                "случаи посещения н/л в госучреждениях",
+                "лишение родительских прав в отношении одного или нескольких н/л"
+            ],
+            "count": "",
+            "countFlag": false
+        }
+    },
+    {
+        "data": {
+            "name": "фактСоцПсих",
+            "string": "Соц - психологические",
+            "flags": "rdl",
+            "category": "Социальные факторы",
+            "numCat": 2,
+            "required": false,
+            "once": false,
+            "critical": true,
+            "list": [
+                " ",
+                "суицидальное поведение взрослых членов семьи",
+                "суицидальное поведение н/л",
+                "самоповреждение / рискованное поведение н/л",
+                "суицидальная попытка / завершённый суицид члена семьи",
+                "конфликты между взрослыми членами семьи",
+                "конфликтные отношения н/л со сверстниками",
+                "физическое / сексуальное насилие по отношению ко взрослым членам семьи",
+                "психологическое насилие по отношению ко взрослым членам семьи",
+                "экономическое насилие по отношению ко взрослым членам семьи",
+                "физическое насилие по отношению к н/л",
+                "сексуальное насилие по отношению к н/л",
+                "психологическое насилие по отношению к н/л",
+                "экономическое насилие по отношению к н/л",
+                "женщина, сомневающаяся в рождении ребёнка",
+                "женщина, сомневающаяся в принятии ребёнка"
+            ],
+            "count": "",
+            "countFlag": false
+        }
+    },
+    {
+        "data": {
+            "name": "фактСоцКрим",
+            "string": "Соц - криминогенные",
+            "flags": "rdl",
+            "category": "Социальные факторы",
+            "numCat": 2,
+            "required": false,
+            "once": false,
+            "critical": true,
+            "list": [
+                " ",
+                "признаки аморального поведения взрослых членов семьи",
+                "взрослые члены семьи, отбывающие наказание в м.л.с.",
+                "взрослые члены семьи, имеющие условный срок",
+                "взрослые члены семьи, состоящие на учёте в органах полиции",
+                "н/л, отбывающие наказание в с.у.з.т.",
+                "н/л, обучающиеся в специальных учебных заведениях",
+                "н/л, ранее обучавшиеся в специальных учебных заведениях",
+                "н/л, имеющие условный срок",
+                "н/л, состоящие на учёте в органах полиции",
+                "отсрочка исполнения наказания законного представителя до достижения н/л возраста 14 лет"
+            ],
+            "count": "",
+            "countFlag": false
+        }
+    },
+    {
+        "data": {
+            "name": "фактСоцМед",
+            "string": "Соц - медицинские",
+            "flags": "rdl",
+            "category": "Социальные факторы",
+            "numCat": 2,
+            "required": false,
+            "once": false,
+            "critical": true,
+            "list": [
+                " ",
+                "н/л замечены в употреблении спиртных напитков",
+                "н/л с диагнозом алкоголизм",
+                "н/л замечены в употреблении наркотических веществ, ПАВ",
+                "н/л с диагнозом наркомания / токсикомания",
+                "взрослые члены семьи замечены в употреблении спиртных напитков",
+                "взрослые члены семьи с диагнозом алкоголизм",
+                "взрослые члены семьи замечены в употреблении наркотических веществ, ПАВ",
+                "взрослые челны семьи с диагнозом наркомания / токсикомания",
+                "ментальные нарушения у н/л",
+                "ментальные нарушения у родителей"
+            ],
+            "count": "",
+            "countFlag": false
+        }
+    },
+    {
+        "data": {
+            "name": "пропискаРодитель",
+            "string": "Прописка",
+            "flags": "rd",
+            "category": "Адрес",
+            "numCat": 3,
+            "required": false,
+            "once": 2,
+            "critical": true,
+            "list": [],
+            "count": "",
+            "countFlag": false
+        }
+    },
+    {
+        "data": {
+            "name": "адресРодитель",
+            "string": "Адрес",
+            "flags": "rd",
+            "category": "Адрес",
+            "numCat": 3,
+            "required": false,
+            "once": 2,
+            "critical": true,
+            "list": [],
+            "count": "",
+            "countFlag": false
+        }
+    },
+    {
+        "data": {
+            "name": "телефонРодитель",
+            "string": "Телефон",
+            "flags": "rd",
+            "category": "Родители",
+            "numCat": 4,
+            "required": false,
+            "once": false,
+            "critical": true,
+            "list": [],
+            "count": "",
+            "countFlag": false
+        }
+    },
+    {
+        "data": {
+            "name": "ФИОмать",
+            "string": "Мать",
+            "flags": "rd",
+            "category": "Родители",
+            "numCat": 4,
+            "required": false,
+            "once": 1,
+            "critical": true,
+            "list": [],
+            "count": "",
+            "countFlag": false
+        }
+    },
+    {
+        "data": {
+            "name": "ДРмать",
+            "string": "Дата рождения матери",
+            "flags": "rd",
+            "category": "Родители",
+            "numCat": 4,
+            "required": false,
+            "once": false,
+            "critical": true,
+            "list": [],
+            "count": "",
+            "countFlag": false
+        }
+    },
+    {
+        "data": {
+            "name": "серияПаспартМать",
+            "string": "Серия паспорта матери",
+            "flags": "rd",
+            "category": "Родители",
+            "numCat": 4,
+            "required": false,
+            "once": false,
+            "critical": true,
+            "list": [],
+            "count": "",
+            "countFlag": false
+        }
+    },
+    {
+        "data": {
+            "name": "номерПаспортМать",
+            "string": "Номер паспорта матери",
+            "flags": "rd",
+            "category": "Родители",
+            "numCat": 4,
+            "required": false,
+            "once": false,
+            "critical": true,
+            "list": [],
+            "count": "",
+            "countFlag": false
+        }
+    },
+    {
+        "data": {
+            "name": "выданПаспортМать",
+            "string": "Кем выдан паспорт матери",
+            "flags": "rd",
+            "category": "Родители",
+            "numCat": 4,
+            "required": false,
+            "once": false,
+            "critical": true,
+            "list": [],
+            "count": "",
+            "countFlag": false
+        }
+    },
+    {
+        "data": {
+            "name": "снилсМать",
+            "string": "СНИЛС матери",
+            "flags": "rd",
+            "category": "Родители",
+            "numCat": 4,
+            "required": false,
+            "once": false,
+            "critical": true,
+            "list": [],
+            "count": "",
+            "countFlag": false
+        }
+    },
+    {
+        "data": {
+            "name": "ФИОотец",
+            "string": "Отец",
+            "flags": "rd",
+            "category": "Родители",
+            "numCat": 4,
+            "required": false,
+            "once": 1,
+            "critical": true,
+            "list": [],
+            "count": "",
+            "countFlag": false
+        }
+    },
+    {
+        "data": {
+            "name": "ДРотец",
+            "string": "Дата рождения отца",
+            "flags": "rd",
+            "category": "Родители",
+            "numCat": 4,
+            "required": false,
+            "once": false,
+            "critical": true,
+            "list": [],
+            "count": "",
+            "countFlag": false
+        }
+    },
+    {
+        "data": {
+            "name": "серияПаспортОтец",
+            "string": "Серия паспорта отца",
+            "flags": "rd",
+            "category": "Родители",
+            "numCat": 4,
+            "required": false,
+            "once": false,
+            "critical": true,
+            "list": [],
+            "count": "",
+            "countFlag": false
+        }
+    },
+    {
+        "data": {
+            "name": "номерПаспортОтец",
+            "string": "Номер паспорта отца",
+            "flags": "rd",
+            "category": "Родители",
+            "numCat": 4,
+            "required": false,
+            "once": false,
+            "critical": true,
+            "list": [],
+            "count": "",
+            "countFlag": false
+        }
+    },
+    {
+        "data": {
+            "name": "выданПаспортОтец",
+            "string": "Кем выдан паспорт отцу",
+            "flags": "rd",
+            "category": "Родители",
+            "numCat": 4,
+            "required": false,
+            "once": false,
+            "critical": true,
+            "list": [],
+            "count": "",
+            "countFlag": false
+        }
+    },
+    {
+        "data": {
+            "name": "снилсОтец",
+            "string": "СНИЛС отца",
+            "flags": "rd",
+            "category": "Родители",
+            "numCat": 4,
+            "required": false,
+            "once": false,
+            "critical": true,
+            "list": [],
+            "count": "",
+            "countFlag": false
+        }
+    },
+    {
+        "data": {
+            "name": "ФИОребёнок1",
+            "string": "Ребёнок 1 (ФИО)",
+            "flags": "rdx",
+            "category": "Дети",
+            "numCat": 5,
+            "required": false,
+            "once": false,
+            "critical": true,
+            "list": [],
+            "count": "",
+            "countFlag": false
+        }
+    },
+    {
+        "data": {
+            "name": "датаРожденияРебёнок1",
+            "string": "Дата рождения 1 ребёнка",
+            "flags": "rdx",
+            "category": "Дети",
+            "numCat": 5,
+            "required": false,
+            "once": false,
+            "critical": true,
+            "list": [],
+            "count": "",
+            "countFlag": false
+        }
+    },
+    {
+        "data": {
+            "name": "свидетельствоОРожденииРебёнок1",
+            "string": "Свидетельство о рождении 1 ребёнка",
+            "flags": "rdx",
+            "category": "Дети",
+            "numCat": 5,
+            "required": false,
+            "once": false,
+            "critical": true,
+            "list": [],
+            "count": "",
+            "countFlag": false
+        }
+    },
+    {
+        "data": {
+            "name": "паспортРебёнок1",
+            "string": "Паспорт 1 ребёнка",
+            "flags": "rdx",
+            "category": "Дети",
+            "numCat": 5,
+            "required": false,
+            "once": false,
+            "critical": true,
+            "list": [],
+            "count": "",
+            "countFlag": false
+        }
+    },
+    {
+        "data": {
+            "name": "ФИОребёнок2",
+            "string": "Ребёнок 2 (ФИО)",
+            "flags": "rdx",
+            "category": "Дети",
+            "numCat": 5,
+            "required": false,
+            "once": false,
+            "critical": true,
+            "list": [],
+            "count": "",
+            "countFlag": false
+        }
+    },
+    {
+        "data": {
+            "name": "датаРожденияРебёнок2",
+            "string": "Дата рождения 2 ребёнка",
+            "flags": "rdx",
+            "category": "Дети",
+            "numCat": 5,
+            "required": false,
+            "once": false,
+            "critical": true,
+            "list": [],
+            "count": "",
+            "countFlag": false
+        }
+    },
+    {
+        "data": {
+            "name": "свидетельствоОРожденииРебёнок2",
+            "string": "Свидетельство о рождении 2 ребёнка",
+            "flags": "rdx",
+            "category": "Дети",
+            "numCat": 5,
+            "required": false,
+            "once": false,
+            "critical": true,
+            "list": [],
+            "count": "",
+            "countFlag": false
+        }
+    },
+    {
+        "data": {
+            "name": "паспортРебёнок2",
+            "string": "Паспорт 2 ребёнка",
+            "flags": "rdx",
+            "category": "Дети",
+            "numCat": 5,
+            "required": false,
+            "once": false,
+            "critical": true,
+            "list": [],
+            "count": "",
+            "countFlag": false
+        }
+    },
+    {
+        "data": {
+            "name": "ФИОребёнок3",
+            "string": "Ребёнок 3 (ФИО)",
+            "flags": "rdx",
+            "category": "Дети",
+            "numCat": 5,
+            "required": false,
+            "once": false,
+            "critical": true,
+            "list": [],
+            "count": "",
+            "countFlag": false
+        }
+    },
+    {
+        "data": {
+            "name": "датаРожденияРебёнок3",
+            "string": "Дата рождения 3 ребёнка",
+            "flags": "rdx",
+            "category": "Дети",
+            "numCat": 5,
+            "required": false,
+            "once": false,
+            "critical": true,
+            "list": [],
+            "count": "",
+            "countFlag": false
+        }
+    },
+    {
+        "data": {
+            "name": "свидетельствоОРожденииРебёнок3",
+            "string": "Свидетельство о рождении 3 ребёнка",
+            "flags": "rdx",
+            "category": "Дети",
+            "numCat": 5,
+            "required": false,
+            "once": false,
+            "critical": true,
+            "list": [],
+            "count": "",
+            "countFlag": false
+        }
+    },
+    {
+        "data": {
+            "name": "паспортРебёнок3",
+            "string": "Паспорт 3 ребёнка",
+            "flags": "rdx",
+            "category": "Дети",
+            "numCat": 5,
+            "required": false,
+            "once": false,
+            "critical": true,
+            "list": [],
+            "count": "",
+            "countFlag": false
+        }
+    },
+    {
+        "data": {
+            "name": "ФИОребёнок4",
+            "string": "Ребёнок 4 (ФИО)",
+            "flags": "rdx",
+            "category": "Дети",
+            "numCat": 5,
+            "required": false,
+            "once": false,
+            "critical": true,
+            "list": [],
+            "count": "",
+            "countFlag": false
+        }
+    },
+    {
+        "data": {
+            "name": "датаРожденияРебёнок4",
+            "string": "Дата рождения 4 ребёнка",
+            "flags": "rdx",
+            "category": "Дети",
+            "numCat": 5,
+            "required": false,
+            "once": false,
+            "critical": true,
+            "list": [],
+            "count": "",
+            "countFlag": false
+        }
+    },
+    {
+        "data": {
+            "name": "свидетельствоОРожденииРебёнок4",
+            "string": "Свидетельство о рождении 4 ребёнка",
+            "flags": "rdx",
+            "category": "Дети",
+            "numCat": 5,
+            "required": false,
+            "once": false,
+            "critical": true,
+            "list": [],
+            "count": "",
+            "countFlag": false
+        }
+    },
+    {
+        "data": {
+            "name": "паспортРебёнок4",
+            "string": "Паспорт 4 ребёнка",
+            "flags": "rdx",
+            "category": "Дети",
+            "numCat": 5,
+            "required": false,
+            "once": false,
+            "critical": true,
+            "list": [],
+            "count": "",
+            "countFlag": false
+        }
+    },
+    {
+        "data": {
+            "name": "ФИОребёнок5",
+            "string": "Ребёнок 5 (ФИО)",
+            "flags": "rdx",
+            "category": "Дети",
+            "numCat": 5,
+            "required": false,
+            "once": false,
+            "critical": true,
+            "list": [],
+            "count": "",
+            "countFlag": false
+        }
+    },
+    {
+        "data": {
+            "name": "датаРожденияРебёнок5",
+            "string": "Дата рождения 5 ребёнка",
+            "flags": "rdx",
+            "category": "Дети",
+            "numCat": 5,
+            "required": false,
+            "once": false,
+            "critical": true,
+            "list": [],
+            "count": "",
+            "countFlag": false
+        }
+    },
+    {
+        "data": {
+            "name": "свидетельствоОРожденииРебёнок5",
+            "string": "Свидетельство о рождении 5 ребёнка",
+            "flags": "rdx",
+            "category": "Дети",
+            "numCat": 5,
+            "required": false,
+            "once": false,
+            "critical": true,
+            "list": [],
+            "count": "",
+            "countFlag": false
+        }
+    },
+    {
+        "data": {
+            "name": "паспортРебёнок5",
+            "string": "Паспорт 5 ребёнка",
+            "flags": "rdx",
+            "category": "Дети",
+            "numCat": 5,
+            "required": false,
+            "once": false,
+            "critical": true,
+            "list": [],
+            "count": "",
+            "countFlag": false
+        }
+    },
+    {
+        "data": {
+            "name": "ФИОребёнок6",
+            "string": "Ребёнок 6 (ФИО)",
+            "flags": "rdx",
+            "category": "Дети",
+            "numCat": 5,
+            "required": false,
+            "once": false,
+            "critical": true,
+            "list": [],
+            "count": "",
+            "countFlag": false
+        }
+    },
+    {
+        "data": {
+            "name": "датаРожденияРебёнок6",
+            "string": "Дата рождения 6 ребёнка",
+            "flags": "rdx",
+            "category": "Дети",
+            "numCat": 5,
+            "required": false,
+            "once": false,
+            "critical": true,
+            "list": [],
+            "count": "",
+            "countFlag": false
+        }
+    },
+    {
+        "data": {
+            "name": "свидетельствоОРожденииРебёнок6",
+            "string": "Свидетельство о рождении 6 ребёнка",
+            "flags": "rdx",
+            "category": "Дети",
+            "numCat": 5,
+            "required": false,
+            "once": false,
+            "critical": true,
+            "list": [],
+            "count": "",
+            "countFlag": false
+        }
+    },
+    {
+        "data": {
+            "name": "паспортРебёнок6",
+            "string": "Паспорт 6 ребёнка",
+            "flags": "rdx",
+            "category": "Дети",
+            "numCat": 5,
+            "required": false,
+            "once": false,
+            "critical": true,
+            "list": [],
+            "count": "",
+            "countFlag": false
+        }
+    },
+    {
+        "data": {
+            "name": "ФИОребёнок7",
+            "string": "Ребёнок 7 (ФИО)",
+            "flags": "rdx",
+            "category": "Дети",
+            "numCat": 5,
+            "required": false,
+            "once": false,
+            "critical": true,
+            "list": [],
+            "count": "",
+            "countFlag": false
+        }
+    },
+    {
+        "data": {
+            "name": "датаРожденияРебёнок7",
+            "string": "Дата рождения 7 ребёнка",
+            "flags": "rdx",
+            "category": "Дети",
+            "numCat": 5,
+            "required": false,
+            "once": false,
+            "critical": true,
+            "list": [],
+            "count": "",
+            "countFlag": false
+        }
+    },
+    {
+        "data": {
+            "name": "свидетельствоОРожденииРебёнок7",
+            "string": "Свидетельство о рождении 7 ребёнка",
+            "flags": "rdx",
+            "category": "Дети",
+            "numCat": 5,
+            "required": false,
+            "once": false,
+            "critical": true,
+            "list": [],
+            "count": "",
+            "countFlag": false
+        }
+    },
+    {
+        "data": {
+            "name": "паспортРебёнок7",
+            "string": "Паспорт 7 ребёнка",
+            "flags": "rdx",
+            "category": "Дети",
+            "numCat": 5,
+            "required": false,
+            "once": false,
+            "critical": true,
+            "list": [],
+            "count": "",
+            "countFlag": false
+        }
+    }
+]
