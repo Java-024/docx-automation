@@ -61,14 +61,54 @@ def search1(string):
         return False
     return result
 
+def transform_list(input_list):
+    """
+    Преобразует список строк со специальными структурами в список списков.
+    """
+    result = []
+
+    for item in input_list:
+        # Убираем квадратные скобки
+        content = item[1:-1].strip()
+
+        # Разбиваем по запятой
+        parts = content.split(',')
+
+        # Очищаем каждую часть от кавычек и пробелов
+        cleaned_parts = []
+        for part in parts:
+            part = part.strip()
+            # Убираем разные виды кавычек
+            if part.startswith('"') and part.endswith('"'):
+                part = part[1:-1]
+            elif part.startswith('“') and part.endswith('”'):
+                part = part[1:-1]
+            elif part.startswith("'") and part.endswith("'"):
+                part = part[1:-1]
+            cleaned_parts.append(part)
+
+        # Формируем результат
+        if len(cleaned_parts) >= 2:
+            result.append([cleaned_parts[0], cleaned_parts[1], item])
+        else:
+            result.append([item, '', item])
+
+    return result
+
+
 for i0 in range(len(doc.paragraphs)):
     time.sleep(0)
     #for i1 in range(len(doc.paragraphs[i0].runs)):
-    print(f"{i0+1}. {search1(str(doc.paragraphs[i0].text))} ", end="")
+    vivod = search1(str(doc.paragraphs[i0].text))
+    if isinstance(vivod, list):
+        if vivod != []:
+            print(f"{i0 + 1}. {transform_list(search1(str(doc.paragraphs[i0].text)))} ", end="")
+    else:
+        print(f"{i0 + 1}. {search1(str(doc.paragraphs[i0].text))} ", end="")
     print(doc.paragraphs[i0].text)
         #runs[i1].text)
         #pass
 
-
 input()
 
+# l = [['серияПаспортОтец', 'rd', '[“серияПаспортОтец”, “rd”]'], ['номерПаспортОтец', 'rd', '[“номерПаспортОтец”, “rd”]'], ['выданПаспортОтец', 'rd', '[“выданПаспортОтец”, “rd”]']]
