@@ -77,14 +77,14 @@ def transform_list(input_list):
         # Очищаем каждую часть от кавычек и пробелов
         cleaned_parts = []
         for part in parts:
+            # Убираем все кавычки и пробелы с начала и конца
             part = part.strip()
-            # Убираем разные виды кавычек
-            if part.startswith('"') and part.endswith('"'):
-                part = part[1:-1]
-            elif part.startswith('“') and part.endswith('”'):
-                part = part[1:-1]
-            elif part.startswith("'") and part.endswith("'"):
-                part = part[1:-1]
+            # Заменяем все виды кавычек на пустоту с начала и конца
+            while part and part[0] in ['"', '“', '”', "'"]:
+                part = part[1:]
+            while part and part[-1] in ['"', '“', '”', "'"]:
+                part = part[:-1]
+            part = part.strip()
             cleaned_parts.append(part)
 
         # Формируем результат
