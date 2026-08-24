@@ -30,6 +30,7 @@ EXTERNAL_LISTS = [
     {"type": "input", "label": "Адрес родителей", "value": "г. Москва, ул. Пушкина 10", "count": "г. Москва"},
     {"type": "checkbox", "label": "Использовать для названия файла", "value": True, "count": True},
     {"type": "combo", "label": "Соц - демографические", "value": "многодетная семья", "count": "многодетная семья"},
+    {"type": "category", "text": "Основная информация о родителях"}
 ]
 """
 
@@ -40,13 +41,26 @@ def add_dict(distionary, key, value, nameCat):
     distionary[key].append(value)
 
 def finalize_form(data):
-    form = {}
+    form = []
     for numCat in range(1000):
         if str(numCat) in data:
+            if len(data[str(numCat)])>0:
+                form.append({"type": "category", "text": data[str(numCat)][0]})
+                if len(data[str(numCat)]) > 1:
+                    for item in data[str(numCat)]:
+                        if isinstance(item, dict):
+                            if "l" in item['flags']:
+                                form.append({"type": "combo",
+                                             "label": item["string"],
+                                             "items": list(item["list"]),
+                                             "value": str(item["count"]),
+                                             "count": str(item["count"]),
+                                             "key": str(item["name"]),
+                                             "flags": str(item["flags"])
+                                             })
+                                print(form)
+                            else:pass
 
-            pass
-        pass
-    pass
 
 def read():
     with open("data.json", "r", encoding="utf-8") as f:
@@ -100,7 +114,7 @@ def read():
                            nameCat=str(category)
             )
 
-    return res
+    return finalize_form(res)
     pass
 
 print(read())
