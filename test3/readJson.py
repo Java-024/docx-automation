@@ -39,6 +39,15 @@ def add_dict(distionary, key, value, nameCat):
 
     distionary[key].append(value)
 
+def finalize_form(data):
+    form = {}
+    for numCat in range(1000):
+        if str(numCat) in data:
+
+            pass
+        pass
+    pass
+
 def read():
     with open("data.json", "r", encoding="utf-8") as f:
         data = json.load(f)
